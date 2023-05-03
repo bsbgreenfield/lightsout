@@ -40,7 +40,6 @@ function Board({ nrows, ncols, chanceLightStartsOn }) {
       }
       initialBoard.push(row)
     }
-    console.log(initialBoard)
     return initialBoard;
   }
 
@@ -96,7 +95,6 @@ function Board({ nrows, ncols, chanceLightStartsOn }) {
       return newBoard
     });
   }
-  console.log("####################", board)
   if (hasWon()) return <p>You won!</p>
   else{
     return(
